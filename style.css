@@ -9,8 +9,11 @@ body{
     margin: 40px auto;
     max-width: 650px;
     line-height: 1.6em;
-    font-size: 18px;
     padding: 0;
+}
+
+p {
+   font-size: 16px;
 }
 
 img {
@@ -19,6 +22,6 @@ img {
 }
 
 #whatsapp-icon {
-    height: 1em;
+    height: 1.5em;
     width: auto;
 }
