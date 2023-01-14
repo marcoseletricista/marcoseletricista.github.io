@@ -13,6 +13,20 @@
 
 	  gtag('config', 'G-X62ZTNC9X2');
 	</script>
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-11063008636/crZtCKfIjYgYEPy6oJsp',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
     </head>
     <body>
         <h1>⚡ Marcos Eletricista ⚡</h1>
@@ -20,14 +34,14 @@
 	<img src="cartao.jpeg"/>
 
 	<p><strong>Atendo 24 Hs</strong> qualquer Bairro da Linha do Metrô da Tijuca ao Leblon (Rio de Janeiro)</p>
-	<p>Marcos - <strong>Orçamento Rápido via WhatsApp</strong>: <a href="https://api.whatsapp.com/send?phone=5521982156326">(21) 98215-6326 <img id="whatsapp-icon" src="whatsapp.svg"/></a></p>
+	<p>Marcos - <strong>Orçamento Rápido via WhatsApp</strong>: <a href="https://api.whatsapp.com/send?phone=5521982156326" onclick="gtag_report_conversion()">(21) 98215-6326 <img id="whatsapp-icon" src="whatsapp.svg"/></a></p>
 	Exemplos de serviços que ofereço:<br/>
 	SERVIÇOS ELÉTRICOS PARA <strong>RESIDÊNCIAS</strong>, <strong>COMÉRCIOS</strong>, <strong>CONSULTÓRIOS</strong> MÉDICOS, <strong>LAVANDERIAS</strong>, <strong>BANCAS</strong> DE JORNAIS... INSTALAÇÃO DE <strong>VENTILADORES DE TETO</strong> E <strong>CHUVEIROS</strong> ELÉTRICOS... Entre outros.<br/>
 	Pergunte e terei o prazer em responder.
 	<p>Por favor: <u>só atendo SMS ou WhatsApp</u>!!! 'Ligações de voz' são
 bloqueadas por causa de incessantes ligações de propagandas indesejadas. Muito
 obrigado.</p>
-	<p>Marcos - <strong>Orçamento Rápido via WhatsApp</strong>: <a href="https://api.whatsapp.com/send?phone=5521982156326">(21) 98215-6326 <img id="whatsapp-icon" src="whatsapp.svg"/></a></p>
+	<p>Marcos - <strong>Orçamento Rápido via WhatsApp</strong>: <a href="https://api.whatsapp.com/send?phone=5521982156326" onclick="gtag_report_conversion()">(21) 98215-6326 <img id="whatsapp-icon" src="whatsapp.svg"/></a></p>
 	<p>Não Atendo Barra da Tijuca nem Zona Oeste</p>
 	<p>Minha Base é no Centro e uso a Estação do Metrô da Presidente Vargas</p>
     </body>
