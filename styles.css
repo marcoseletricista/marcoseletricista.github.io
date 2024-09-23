@@ -1,0 +1,267 @@
+:root {
+    --primary: #003366;
+    --secondary: #0077BE;
+    --accent: #FFD700;
+    --text: #333333;
+    --bg: #F5F5F5;
+    --white: #FFFFFF;
+    --whatsapp: #25D366;
+    --youtube: #FF0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--whatsapp);
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.phone-number {
+    font-size: 1em;
+    color: var(--accent);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: var(--white);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.services {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: var(--primary);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: var(--bg);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.service-icon {
+    font-size: 3em;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.testimonial-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 0 40px; /* Add padding to make room for arrows */
+}
+
+.testimonial-item {
+    display: none;
+    padding: 20px;
+}
+
+.testimonial-item.active {
+    display: block;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--accent);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 1.5em;
+    color: var(--white);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.youtube-section {
+    background-color: var(--bg);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.youtube-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--youtube);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.youtube-link:hover {
+    color: #CC0000;
+}
+
+.youtube-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-carousel {
+        padding: 0 30px; /* Adjust padding for smaller screens */
+    }
+
+    .carousel-button {
+        font-size: 1.2em;
+        width: 30px;
+        height: 30px;
+    }
+}
