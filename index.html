@@ -8,6 +8,29 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X62ZTNC9X2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-X62ZTNC9X2');
+	</script>
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-11063008636/crZtCKfIjYgYEPy6oJsp',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
 </head>
 <body>
     <header>
@@ -140,11 +163,6 @@
     </footer>
 
     <script>
-        function gtag_report_conversion() {
-            // Implement Google Ads conversion tracking here
-            console.log('Conversion tracked');
-        }
-
         // Enhanced carousel functionality
         const carousel = document.querySelector('.testimonial-carousel');
         const items = carousel.querySelectorAll('.testimonial-item');
